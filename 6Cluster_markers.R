@@ -28,18 +28,18 @@ for (hc in c(3,4,5,6)){
     load(f)
     
     print(f)
-    filtered_data@meta.data[["hierarchical_clustering"]]<-clu.out
+    combined_filter@meta.data[["hierarchical_clustering"]]<-clu.out
     
     
-    table(filtered_data$hierarchical_clustering)
+    table(combined_filter$hierarchical_clustering)
     
-    Idents(filtered_data)<-filtered_data$hierarchical_clustering
-    for (i in unique(filtered_data$hierarchical_clustering))
+    Idents(combined_filter)<-combined_filter$hierarchical_clustering
+    for (i in unique(combined_filter$hierarchical_clustering))
       
     {
       print("========================")
       print(i)
-      cluster_marker<-FindMarkers(filtered_data,ident.1 = i,min.diff.pct = 0.1)
+      cluster_marker<-FindMarkers(combined_filter,ident.1 = i,min.diff.pct = 0.1)
       cluster_marker<-cluster_marker[cluster_marker$p_val_adj<0.05,]
       cluster_marker$abs<-abs(cluster_marker$avg_log2FC)
       cluster_marker<-cluster_marker[cluster_marker$abs>0.5,]
