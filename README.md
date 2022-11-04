@@ -1,2 +1,26 @@
 # Wdr35_scRNA_seq
 Codes for scRNA-seq analysis
+
+
+# ScRNA_seq_K19WDR
+Codes and scripts for scRNA-seq analysis. This project includes the following steps:
+
+
+## 1. Processing the raw sequencing data using Cell ranger pipeline (version 5.0.0). 
+(1) FASTQ files was generated using ‘cellranger mkfastq’ from raw base call files. This step was performed by the sequencing company and they provided a summary report: SummaryReport.pdf
+
+(2) We then aligned FASTQ files to a pre-build mouse reference genome (GRCm38/mm10) with cellranger count to generate single cell feature counts. The reference genome was download from 10x genomes website (https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest). 
+
+
+(3) We also additionally calculated the unspliced and spliced count matrices for RNA velocity analysis using velocyto (version 0.17). 
+
+
+## 2. scRNA-seq data analysis, mainly with Seurat (version 4.0.6). 
+
+(1) We first created seurat objest, merging all the samples. 
+
+(2) We then perform QC:
+  
+  Gene level: only keep genes which are expressed in 3 or more cells in each sample.
+  
+  Cell level: nFeature_RNA > 600, percent.mt < 5, nFeature_RNA < 7000, nCount_RNA < 50000, Epcam>0, Spp1>0, and remove doublets used DoubletFinder.
