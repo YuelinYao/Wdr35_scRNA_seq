@@ -1,7 +1,3 @@
-# Wdr35_scRNA_seq
-Codes for scRNA-seq analysis
-
-
 # ScRNA_seq_K19WDR
 Codes and scripts for scRNA-seq analysis. This project includes the following steps:
 
