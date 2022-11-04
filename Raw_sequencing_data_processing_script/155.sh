@@ -25,7 +25,7 @@ tx=/exports/eddie/scratch/s1914230/refdata-gex-mm10-2020-A
 run1=/exports/eddie/scratch/s1914230/Single_Cell/SW_NS2K_190321/outs/fastq_path
 
 
-cd /exports/eddie/scratch/s1914230/Single_Cell/optimized
+cd /exports/eddie/scratch/s1914230/Single_Cell/result
 
 s=K19Wdr3512m_155
 
