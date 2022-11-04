@@ -21,7 +21,7 @@ Codes and scripts for scRNA-seq analysis. This project includes the following st
   
   Cell level: nFeature_RNA > 600, percent.mt < 5, nFeature_RNA < 7000, nCount_RNA < 50000, Epcam>0, Spp1>0, and remove doublets used DoubletFinder.
 
-(3) Preprocessing steps: normalisation, finding variable features, scale data, PCA, UMAP, TSNE. 
+(3) Preprocessing steps: normalisation, finding variable features, scale, PCA, UMAP, TSNE. 
 
 (4) Clustering: we applied a **selective inference** framework from lucy gao (https://www.lucylgao.com/clusterpval/index.html) to identify "true" clusters. It tests for the difference in means after any type of clustering and is especially efficient when applied to hierarchical clustering. 
 
