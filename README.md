@@ -30,6 +30,6 @@ clusters. It tests for the difference in means after any type of clustering and 
 
 (6) Perform GO enrichment analysis for the identified clusters. 
 
+(7) Receptor-ligand analysis was performed using R package SingleCellSingalR.
 
-
-
+(8)RNA velocity
