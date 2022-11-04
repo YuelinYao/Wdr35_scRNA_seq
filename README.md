@@ -32,4 +32,4 @@ clusters. It tests for the difference in means after any type of clustering and 
 
 (7) Receptor-ligand analysis was performed using R package SingleCellSingalR.
 
-(8)RNA velocity
+(8) RNA velocity
