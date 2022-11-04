@@ -23,4 +23,10 @@ Codes and scripts for scRNA-seq analysis. This project includes the following st
 
 (3) Preprocessing steps: normalisation, finding variable features, scale data, PCA, UMAP, TSNE. 
 
-(4) Clustering: we applied a selective inference framework from lucy gao (https://www.lucylgao.com/clusterpval/index.html) to identify clusters. 
+(4) Clustering: we applied a **selective inference** framework from lucy gao (https://www.lucylgao.com/clusterpval/index.html) to identify "true" clusters. 
+
+(5) Perform GO enrichment analysis for identify cluster.
+
+(6) DEA for cluster 1 and cluster 2.
+
+
