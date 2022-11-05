@@ -26,7 +26,7 @@ Codes and scripts for scRNA-seq analysis. This project includes the following st
 (4) Clustering: we applied a **selective inference** framework from lucy gao (https://www.lucylgao.com/clusterpval/index.html) to identify "true" 
 clusters. It tests for the difference in means after any type of clustering and is especially efficient when applied to hierarchical clustering. 
 
-(5) DEA for cluster 1 and cluster 2. For functional enrichment analysis, We obtained the background genes selected from a previous public dataset (https://www.nature.com/articles/s41556-019-0402-6). The background genes is a set of genes known to expressed in the EpCam sorted cholangiocytes from mouse.
+(5) Differential expression analysis between cluster 1 and cluster 2. For functional enrichment analysis, We obtained the background genes selected from a previous public dataset (https://www.nature.com/articles/s41556-019-0402-6). The background genes is a set of genes known to expressed in the EpCam sorted cholangiocytes from mouse.
 
 (6) Perform GO enrichment analysis for the identified clusters. 
 
