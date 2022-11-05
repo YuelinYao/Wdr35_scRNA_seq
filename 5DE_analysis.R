@@ -252,3 +252,33 @@ ggplot(all_function, aes(x = Description, y = Group)) +
         axis.title.x=element_blank())+
   xlab("Functional annotation")+
   labs(color="-log10(FDR)", size="Number\nof genes")
+
+
+
+
+######################################
+######extract cell id for RNA velocity
+######################################
+all_cells<-Cells(combined_filter)
+all_id<-as.data.frame(t(as.data.frame(strsplit(all_cells, split = "-" ))))
+all_id<-as.data.frame(t(as.data.frame(strsplit(all_id$V1, split = "_" ))))
+all_id$sample<-NA
+all_id$sample[all_id$V1=="155"]<-"K19Wdr3512m_155:"
+all_id$sample[all_id$V1=="158"]<-"K19Wdr3512m_158:"
+all_id$sample[all_id$V1=="186"]<-"K19Wdr3512m_186:"
+all_id$sample[all_id$V1=="200"]<-"K19Wdr3512m_200:"
+all_id$sample[all_id$V1=="168"]<-"K19Wdr3512m_168:"
+all_id$sample[all_id$V1=="176"]<-"K19Wdr3512m_176:"
+all_id$sample[all_id$V1=="177"]<-"K19Wdr3512m_177:"
+all_id$sample<-paste0(all_id$sample,all_id$V2,"x")
+
+all_id$sample
+
+write.csv(all_id$sample,file="all_id.csv",row.names = FALSE)
+write.csv(Embeddings(combined_filter, reduction = "umap"), file = "cell_embeddings.csv")
+write.csv(combined_filter@meta.data[["hierarchical_clustering"]], file = "hierarchical_clustering_4.csv")
+
+#color<-c("#F8766D","#7CAE00","#00BFC4","#C77CFF")
+#names(color)<-c(1,2,3,4)
+
+
