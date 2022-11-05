@@ -30,6 +30,6 @@ clusters. It tests for the difference in means after any type of clustering and 
 
 (6) Perform GO enrichment analysis for the identified clusters. 
 
-(7) Receptor-ligand analysis was performed using R package SingleCellSingalR.
+(7) Receptor-ligand analysis was performed using R package SingleCellSingalR. Ref: https://www.bioconductor.org/packages/release/bioc/vignettes/SingleCellSignalR/inst/doc/UsersGuide.html
 
-(8) RNA velocity
+(8) RNA velocity analysis. Ref: https://scvelo.readthedocs.io/getting_started/
