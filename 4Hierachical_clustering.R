@@ -99,21 +99,7 @@ for (i in c(3:5)){
 
 
 
-#### extract information for RNA velocity #######
-color<-c("#F8766D","#7CAE00","#00BFC4","#C77CFF")
-names(color)<-c(1,2,3,4)
 
-cell_cluster<-cutree(hcl, k)
-cel_color<-cell_cluster
-cluster_color<-color[cel_color]
-cluster_color
-
-
-scvelo_index<-colnames(combined_filter)
-write.csv(scvelo_index,file="~/velocyto/all_id.csv",row.names = FALSE)
-write.csv(Embeddings(combined_filter, reduction = "umap"), file = "~/velocyto/cell_embeddings_umap.csv")
-write.csv(cluster_color,file="~/velocyto/color.group.csv")
-write.csv(combined_filter$Group,file="~/velocyto/group.csv")
 
 
 
