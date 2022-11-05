@@ -5,7 +5,7 @@ Codes and scripts for scRNA-seq analysis. This project includes the following st
 ## 1. Processing the raw sequencing data using Cell ranger pipeline (version 5.0.0). 
 (1) FASTQ files was generated using ‘cellranger mkfastq’ from raw base call files. This step was performed by the sequencing company and they provided a summary report: SummaryReport.pdf
 
-(2) We then aligned FASTQ files to a pre-build mouse reference genome (GRCm38/mm10) with cellranger count to generate single cell feature counts. The reference genome was download from 10x genomes website (https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest). 
+(2) We then aligned FASTQ files to a pre-build mouse reference genome (GRCm38/mm10) with cellranger count to generate single cell feature counts. The reference genome was downloaded from 10x genomes website (https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest). 
 
 
 (3) We also additionally calculated the unspliced and spliced count matrices for RNA velocity analysis using velocyto (version 0.17). 
