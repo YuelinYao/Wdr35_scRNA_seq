@@ -18,8 +18,8 @@ See Yuelin.yml for conda enviroment
 wget https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-mm10-2020-A.tar.gz
 tar -xzvf refdata-gex-mm10-2020-A.tar.gz
 
-#https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/fastq-input
-#https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/glossary#gem_well
+#ref: https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/fastq-input
+#ref: https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/glossary#gem_well
 ```
 
 ## Cell ranger count
