@@ -19,7 +19,7 @@ Codes and scripts for scRNA-seq analysis. This project includes the following st
   
   Gene level: only keep genes which are expressed in 3 or more cells in each sample.
   
-  Cell level: nFeature_RNA > 600, percent.mt < 5, nFeature_RNA < 7000, nCount_RNA < 50000, Epcam>0, Spp1>0, and remove doublets used DoubletFinder.
+  Cell level: nFeature_RNA > 600, percent.mt < 5, nFeature_RNA < 7000, nCount_RNA < 50000, Epcam>0, Spp1>0, and remove doublets used DoubletFinder (V2.0).
 
 (3) Preprocessing steps: normalisation, finding variable features, scale, PCA, UMAP, TSNE. 
 
