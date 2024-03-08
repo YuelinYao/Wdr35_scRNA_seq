@@ -1,7 +1,7 @@
 # ScRNA_seq_K19WDR
 Codes and scripts for scRNA-seq analysis. 
 
-The processed Seurat object can be acessed here: https://www.dropbox.com/scl/fi/7wjf2sjtw2ekrjw8dyjp6/combined_filter.Rdata?rlkey=vbpwcuds6a97cfyo397d76tnl&dl=0, which consist of mutant: 1116 and wild type: 2910, CD45−/CD31−/EpCAM+ BECs.
+The processed Seurat object can be acessed here: https://www.dropbox.com/scl/fi/7wjf2sjtw2ekrjw8dyjp6/combined_filter.Rdata?rlkey=vbpwcuds6a97cfyo397d76tnl&dl=0, which consist of mutant (n=1116) and wild type (n=2910), CD45−/CD31−/EpCAM+ BECs.
 
 Please do not hesitate to contact yaoyuelin120@gmail.com or Y.Yao-38@sms.ed.ac.uk if you have any question.
 
